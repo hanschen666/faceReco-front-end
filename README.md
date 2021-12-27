@@ -1,3 +1,7 @@
+This is an app that can detect face in pictures, it is so cool!!!
+
+
+
 it is the url for this cool app https://smart-facereco-app.herokuapp.com/
 
 GO check it!!!!
