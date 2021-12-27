@@ -14,6 +14,13 @@ const Navigation = ({ onRouteChange, route }) => {
         >
           Sign Out
         </p>
+
+        <p
+          onClick={() => onRouteChange("signin")}
+          className="f3 link dim black underline pa3 pv0 pointer"
+        >
+          Delete Account
+        </p>
       </nav>
     );
   } else {
