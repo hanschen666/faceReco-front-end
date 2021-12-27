@@ -28,8 +28,8 @@ class Signin extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         if (data.id) {
-          this.props.onRouteChange("home");
           this.props.loadUser(data);
+          this.props.onRouteChange("home");
         } else {
           alert(
             "The email you entered is not registered or the password is incorrect! Please try again🙁"

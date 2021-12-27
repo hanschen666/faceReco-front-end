@@ -17,8 +17,8 @@ const Navigation = ({ onRouteChange, route, onDelete }) => {
 
         <p
           onClick={() => {
+            onDelete;
             onRouteChange("signin");
-            onDelete();
           }}
           className="f3 link dim black underline pa3 pv0 pointer"
         >
