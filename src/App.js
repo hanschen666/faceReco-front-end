@@ -189,6 +189,8 @@ class App extends React.Component {
       body: JSON.stringify({
         id: this.state.user.id,
       }),
+    }).then((response) => {
+      console.log(response);
     });
   };
   render() {
