@@ -181,6 +181,16 @@ class App extends React.Component {
       route: route,
     });
   };
+
+  onDelete = () => {
+    fetch("https://shrouded-savannah-81851.herokuapp.com/delete", {
+      method: "delete",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        id: this.state.user.id,
+      }),
+    });
+  };
   render() {
     const particlesInit = (main) => {};
 
@@ -197,6 +207,7 @@ class App extends React.Component {
         <Navigation
           onRouteChange={this.onRouteChange}
           route={this.state.route}
+          onDelete={this.onDelete}
         ></Navigation>
         {this.state.route === "signin" ? (
           <Signin
