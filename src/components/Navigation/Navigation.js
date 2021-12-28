@@ -1,5 +1,5 @@
 import React from "react";
-const Navigation = ({ onRouteChange, route }) => {
+const Navigation = ({ onRouteChange, route, onDelete }) => {
   if (route === "home") {
     return (
       <nav
@@ -13,6 +13,16 @@ const Navigation = ({ onRouteChange, route }) => {
           className="f3 link dim black underline pa3 pv0 pointer"
         >
           Sign Out
+        </p>
+
+        <p
+          onClick={() => {
+            onRouteChange("signin");
+            onDelete();
+          }}
+          className="f3 link dim black underline pa3 pv0 pointer"
+        >
+          Delete Account
         </p>
       </nav>
     );
