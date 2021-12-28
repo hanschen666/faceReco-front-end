@@ -193,6 +193,7 @@ class App extends React.Component {
       console.log(response);
     });
   };
+  
   render() {
     const particlesInit = (main) => {};
 
